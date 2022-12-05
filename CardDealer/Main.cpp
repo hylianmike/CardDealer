@@ -11,6 +11,9 @@ int main() {
 	cout << "Card Dealers" << endl;
 	cout << endl << endl << "I have shuffled the deck of 52 cards." << endl << endl;
 	
+	// random seed
+	srand(time(nullptr));
+	
 	//ask how many cards the user would like
 	int numCards;
 	cout << "How many cards would you like to draw? ";
