@@ -1,4 +1,5 @@
 #include "DeckOfCards.h"
+#include <algorithm>
 
 DeckOfCards::DeckOfCards() {
 	vector<string> values = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace" };
@@ -16,4 +17,10 @@ Card DeckOfCards::drawTopCard() {
 
 void DeckOfCards::removeTopCard() {
 	cards.erase(cards.begin());
+}
+
+void DeckOfCards::shuffle() {
+	{
+		std::random_shuffle(cards.begin(), cards.end());
+	}
 }

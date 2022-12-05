@@ -13,6 +13,7 @@ public:
 	DeckOfCards();
 	Card drawTopCard();
 	void removeTopCard();
+	void shuffle();
 };
 
 #endif
