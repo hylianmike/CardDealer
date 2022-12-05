@@ -19,6 +19,10 @@ void DeckOfCards::removeTopCard() {
 	cards.erase(cards.begin());
 }
 
+rsize_t DeckOfCards::getDeckSize() {
+	return cards.size();
+}
+
 void DeckOfCards::shuffle() {
 	{
 		std::random_shuffle(cards.begin(), cards.end());
