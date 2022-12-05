@@ -44,9 +44,6 @@ int main() {
 	}
 	cout << endl;
 	
-	// calculate remaining cards
-	int remainingCards = 52 - numCards;
-	
 	//create a deck of cards
 	DeckOfCards deck;
 	
@@ -61,5 +58,5 @@ int main() {
 	}
 	
 	// display remaining cards
-	cout << "\nThere are " << remainingCards << " cards left in the deck." << endl;
+	cout << "\nThere are " << deck.getDeckSize() << " cards left in the deck." << endl;
 }
