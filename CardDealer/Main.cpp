@@ -20,6 +20,9 @@ int main() {
 	cin >> numCards;
 	cout << endl;
 	
+	// calculate remaining cards
+	int remainingCards = 52 - numCards;
+	
 	//create a deck of cards
 	DeckOfCards deck;
 	
@@ -32,4 +35,7 @@ int main() {
 		cout << "Card " << i + 1 << ": " << deck.drawTopCard().ToString() << endl;
 		deck.removeTopCard();
 	}
+	
+	// display remaining cards
+	cout << "\nThere are " << remainingCards << " cards left in the deck." << endl;
 }
