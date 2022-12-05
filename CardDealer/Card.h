@@ -10,7 +10,7 @@ private:
 	string value;
 	string suit;
 public:
-	Card();
+	Card(string value, string suit);
 	string ToString();
 };
 
