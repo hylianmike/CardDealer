@@ -12,6 +12,7 @@ private:
 public:
 	DeckOfCards();
 	Card drawTopCard();
+	rsize_t getDeckSize();
 	void removeTopCard();
 	void shuffle();
 };
