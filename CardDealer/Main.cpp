@@ -1,3 +1,12 @@
+///////////////////////
+//     Created By    //
+// ------------------//
+// Mike Rosanelli    //
+// Alessio Schiavi   //
+// Liam Slappendel   //
+// Jackson Douma     //
+///////////////////////
+
 #include <iostream>
 #include "Card.h"
 #include "DeckOfCards.h"
@@ -5,8 +14,9 @@
 using namespace std;
 
 int main() {
+	// introduce the user
 	cout << "Group 5: Liam S, Alessio S, Jack D, Michael R" << endl;
-	cout << "C++ Assignment 2" << endl;
+	cout << "C++ Major Assignment 2 : December 8, 2022" << endl;
 	cout << "==============================================" << endl;
 	cout << "Card Dealers" << endl;
 	cout << endl << endl << "I have shuffled the deck of 52 cards." << endl << endl;
@@ -58,5 +68,8 @@ int main() {
 	}
 	
 	// display remaining cards
-	cout << "\nThere are " << deck.getDeckSize() << " cards left in the deck." << endl;
+	cout << "\nThere are " << deck.getDeckSize() << " cards left in the deck." << endl << endl;
+
+	// Say goodbye to the user
+	cout << "Have a Wonderful Wednesday!" << endl;
 }
